@@ -27,13 +27,13 @@ TOPO is a full-stack application that processes and visualizes data from multipl
 conda create -n name_environment python=3.10
 conda activate name_environment
 
-# Install dependencies
-pip install -r server/requirements.txt
-conda install -c conda-forge flask pandas pytest
-
 # Clone repository
 git clone https://github.com/katsuchi23/TOPO.git topo
 cd topo
+
+# Install dependencies
+pip install -r server/requirements.txt
+conda install -c conda-forge flask pandas pytest
 
 # Copy datasets to server directory
 # Make sure datasets are in the same directory as the server
@@ -45,7 +45,9 @@ python app.py
 
 ### Frontend Setup
 ```bash
+# Open a new terminal
 cd client
+npm install # To install all dependencies
 npm run dev
 # Open the provided localhost URL in your browser
 ```
