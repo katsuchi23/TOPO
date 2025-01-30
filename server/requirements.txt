@@ -5,3 +5,4 @@ python-pptx==0.6.23
 pytest==8.0.2
 pyyaml==6.0
 lark==1.2.2
+flask_cors==5.0.0
